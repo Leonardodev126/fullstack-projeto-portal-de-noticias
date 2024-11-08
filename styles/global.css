@@ -14,30 +14,43 @@
     --text-color-secondary: #CBD5E1;
 }
 
-a:hover {
-    color: var(--brand-color-light);
-}
-
-h1, h2, h3 {
-    font: inherit;
-}
-
-.container {
-    max-width: 1280px;
-    padding-inline: 32px;
-    margin-inline: auto;
-}
 
 body {
     color: var(--text-color-primary);
     background-color: var(--bg-color);
 }
 
-/* utility-first */
-.grid {
-    display: grid;
+a:hover {
+    color: var(--brand-color-light);
+    transition: 350ms;
 }
 
-.grid-flow-column {
-    grid-auto-flow: column;
+h1, h2, h3 {
+    font: inherit;
+}
+
+
+/* section img:nth-child(1) {
+    width: 608px;
+    height: 416px;
+}
+
+section img:nth-child(2) {
+    width: 288px;
+    height: 200px;
+} */
+
+img {
+    max-width: 100%;
+}
+
+/* Classe usada para todas as divisões da página - header, main, footer etc.. */
+.container {
+    max-width: 1280px;
+    padding-inline: 32px;
+    margin-inline: auto;
+}
+
+main {
+    margin-top: 40px;
 }
