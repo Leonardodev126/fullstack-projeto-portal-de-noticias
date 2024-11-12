@@ -2,36 +2,42 @@
     img {
         height: 100%;
         object-fit: cover; /* o object-fit faz a cobertura de todo espaço que está sobrando*/
-        
-    }
-}
-
-.card {
-    border-radius: 4px;
-    overflow: hidden; /* ele esconde tudo o que transbordar na caixa */
-    position: relative;
-
-    &::before {
-        content: "";
-        position: absolute;
-        inset: 0;
-        top: 50%;
-        background: linear-gradient( /* Ele apresenta o elemento linear na página - Ele põe uma cor de fundo transparente */
-            180deg,
-            transparent 0%,
-            #020617 100%
-        );
     }
 
-    figcaption {
-        position: absolute;
-        bottom: 0;
-        padding: 24px;
+    .card {
+        border-radius: 4px;
+        overflow: hidden; /* ele esconde tudo o que transbordar na caixa */
+        position: relative;
+    
+        /* .card::before */
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            top: 50%;
+            background: linear-gradient( /* Ele apresenta o elemento linear na página - Ele põe uma cor de fundo transparente */
+                180deg,
+                transparent 0%,
+                #020617 100%
+            );
+        }
 
+        figcaption {
+            position: absolute;
+            bottom: 0;
+            padding: 24px;
+            
 
-        h2 {
-            margin-top: 8px;
-            font-size: 24px;
+            /* Se tiver alguma classe chamada ".text-lg", você põe um padding de 12px */
+            &:has(.text-lg) {
+                padding: 12px;
+            }
+
+            
+            h2 {
+                margin-top: 8px;
+            }
         }
     }
 }
+

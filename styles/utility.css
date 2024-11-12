@@ -40,3 +40,9 @@
 .font-archivo {
     font-family: "Archivo", sans-serif;
 }
+
+
+.font-archivo-menor {
+    font-family: "Archivo", sans-serif;
+    font-size: 10px;
+}
