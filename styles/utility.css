@@ -19,3 +19,24 @@
 .gap-16 {
     gap: 16px;
 }
+
+/* Texto muito grande para usar quando precisar */
+.text-2x1 {
+    font: var(--h1);
+}
+
+.text-x1 {
+    font: var(--h2);
+}
+
+.text-lg {
+    font: var(--h3);
+}
+
+.text-sm {
+    font: var(--text-sm);
+}
+
+.font-archivo {
+    font-family: "Archivo", sans-serif;
+}
