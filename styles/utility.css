@@ -20,6 +20,10 @@
     gap: 16px;
 }
 
+.gap-32 {
+    gap: 32px;
+}
+
 /* Texto muito grande para usar quando precisar */
 .text-2x1 {
     font: var(--h1);
